@@ -1,0 +1,12 @@
+
+<h2>Edit</h2>
+
+<form method="POST" action="/movie/{{movie.id}}">
+    <label>Name
+        <input type="text" name="title" placeholder="{{movie._doc.title}}">
+        <input type="text" name="genre" placeholder="{{movie._doc.genre}}">
+        <input type="text" name="plot" placeholder="{{movie._doc.plot}}">
+        <button>Edit</button>
+    </label>
+</form>
+<a href="/movie/{{movie.id}}">Back</a>
