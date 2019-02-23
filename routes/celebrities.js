@@ -74,7 +74,7 @@ router.post("/celebrity/:id",(req,res)=>{
         occupation:req.body.occupation,
         catchPhrase:req.body.catchPhrase
     }
-    celebrities.findByIdAndUpdate(req.params.id, update, (err, celeb) => {
+    celebrities.findByIdAndUpdate(req.params.id, update, (err) => {
         if (err){ return next(err); }
         res.redirect('/celebrities');
       });
